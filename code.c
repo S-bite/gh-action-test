@@ -1,6 +1,10 @@
 #include <stdio.h>
-int main()
+#include <stdlib.h>
+
+int main(int argc, char* argv[])
 {
-    printf("Hello World!\n");
+    int x = atoi(argv[1]);
+    int y = atoi(argv[2]);
+    printf("%d / %d = %d\n", x, y, x / y);
     return 0;
 }
